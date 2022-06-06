@@ -46,7 +46,7 @@ GO
 --15. Obtener el número del cliente que hizo el primer pedido.
 SELECT TOP (1) clie FROM Pedidos ORDER BY fechapedido 
 --16. Obtener el nombre del empleado de menor edad.
-
+SELECT TOP(1) nombre FROM Empleados ORDER BY edad 
 
 --Operadores aritméticos
 --17. Siempre he tenido la duda de saber cuanto es siete más tres.
