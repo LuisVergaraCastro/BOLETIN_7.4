@@ -36,12 +36,17 @@ SELECT * FROM Clientes ORDER BY nombre
 --oficina en la misma ciudad, aparecerá primero la que tenga el número de oficina mayor.
 SELECT * FROM Oficinas ORDER BY region, ciudad, oficina DESC
 --13. Obtener los pedidos ordenados por la fecha en la que se realizaron.
-
+SELECT * FROM Pedidos ORDER BY fechapedido
 
 --Limitación del número de resgistros
 --14. Listar los cuatro pedido más caros (con un importe mayor).
+GO
+SELECT TOP (4) * FROM Pedidos ORDER BY importe DESC
+GO
 --15. Obtener el número del cliente que hizo el primer pedido.
+SELECT TOP (1) clie FROM Pedidos ORDER BY fechapedido 
 --16. Obtener el nombre del empleado de menor edad.
+
 
 --Operadores aritméticos
 --17. Siempre he tenido la duda de saber cuanto es siete más tres.
